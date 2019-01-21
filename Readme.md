@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Григорий Леванов](https://up.htmlacademy.ru/htmlcss/24/user/630209).
-* Наставник: `Неизвестно`.
+* Студент: [Григорий Леванов](https://htmlacademy.ru/profile/id630209).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
