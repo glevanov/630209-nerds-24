@@ -5,6 +5,39 @@ html(lang="ru")
     title HTML Academy: Нёрдс
     link(rel="stylesheet" type="text/css" href="css/styles.min.css")
   body
-    h1 Hello
+    header.header
+      h1.visually-hidden Дизайн-студия Нёрдс
+      nav.navigation
+        img(src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нёрдс")
+        ul.menu
+          li.menu__item
+            a(href="") Студия
+          li.menu__item
+            a(href="") Клиенты
+          li.menu__item
+            a(href="catalog.html") Магазин
+          li.menu__item
+            a(href="") Контакты
+        a.cart(href="") Корзина
+    main
+      section.services
+        h2.visually-hidden Услуги
+        ul.services__list
+          li.services__item
+            div.services__thumbnail.services__thumbnail--web
+            h3.services__heading Веб-сайты
+            p.services__description Мир никогда не будет прежним после того как увидит ваш сайт!
+            a(href="").services__button.p.services__button--web ЗАКАЗАТЬ
+          li.services__item
+            div.services__thumbnail.services__thumbnail--app
+            h3.services__heading Приложения
+            p.services__description Покорите топ-10 приложений в AppStore и Google Play
+            a(href="").services__button.p.services__button--app ЗАКАЗАТЬ
+          li.services__item
+            div.services__thumbnail.services__thumbnail--presentation
+            h3.services__heading Презентации
+            p.services__description Вы даже не подозреваете, насколько вы изумительны!
+            a(href="").services__button.p.services__button--presentation ЗАКАЗАТЬ
+    include pug/footer
 |
 |
