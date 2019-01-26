@@ -19,7 +19,8 @@ html(lang="ru")
           li.menu__item
             a(href="") Контакты
         a.cart(href="") Корзина
-    main
+
+    main.main
       h1.heading Магазин готовых шаблонов
       aside.filters
         form
@@ -51,7 +52,7 @@ html(lang="ru")
             p.filters__option
               input.visually-hidden(type="checkbox" id="basket" name="features")
               label.filters__label.filters__label--checkbox(for="basket") Корзина
-          button(type="submit") ПОКАЗАТЬ
+          button.filters__button(type="submit") ПОКАЗАТЬ
 
       ul.cards
         li.cards__item
@@ -90,6 +91,7 @@ html(lang="ru")
             h3.cards__heading Sedona
             p.cards__text Промо-сайт производителя крафтового кваса
             a.cards__button 9 900 руб.
+
     include pug/footer
 |
 |
