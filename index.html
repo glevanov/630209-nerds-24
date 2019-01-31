@@ -3,51 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
-  <body>
-    <header class="header">
+  <body class="page">
+    <header class="main-header page__main-header">
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-      <nav class="navigation"><img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нёрдс">
-        <ul class="menu">
-          <li class="menu__item"><a href="about.html">Студия</a></li>
-          <li class="menu__item"><a href="clients.html">Клиенты</a></li>
-          <li class="menu__item"><a href="catalog.html">Магазин</a></li>
-          <li class="menu__item"><a href="contacts.html">Контакты</a></li>
-        </ul><a class="cart" href="cart.html">Корзина</a>
+      <nav class="main-navigation header__main-navigation"><a class="logo main-navigation__logo"><img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нёрдс"></a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a class="main-navigation__link" href="about.html">Студия</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="clients.html">Клиенты</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Магазин</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="contacts.html">Контакты</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="cart.html">Корзина</a></li>
+        </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="services">
+    <main class="main page__main">
+      <section class="services main__services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list">
           <li class="services__item">
-            <div class="services__thumbnail services__thumbnail--web"><img src="http://placehold.it/300x146" width="300" height="146" alt="Создание сайтов"></div>
+            <div class="services__thumbnail services__thumbnail--web"></div>
             <h3 class="services__heading">Веб-сайты</h3>
             <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p><a class="services__button p services__button--web" href="order.html">ЗАКАЗАТЬ</a>
           </li>
           <li class="services__item">
-            <div class="services__thumbnail services__thumbnail--app"><img src="http://placehold.it/300x146" width="300" height="146" alt="Создание мобильных приложений"></div>
+            <div class="services__thumbnail services__thumbnail--app"></div>
             <h3 class="services__heading">Приложения</h3>
             <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p><a class="services__button p services__button--app" href="order.html">ЗАКАЗАТЬ</a>
           </li>
           <li class="services__item">
-            <div class="services__thumbnail services__thumbnail--presentation"><img src="http://placehold.it/300x146" width="300" height="146" alt="Подготовка презентаций"></div>
+            <div class="services__thumbnail services__thumbnail--presentation"></div>
             <h3 class="services__heading">Презентации</h3>
             <p class="services__description">Вы даже не подозреваете, насколько вы изумительны!</p><a class="services__button p services__button--presentation" href="order.html">ЗАКАЗАТЬ</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer page__footer">
       <ul class="social">
         <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/"></a></li>
         <li class="social__item"><a class="social__link social__link--facebook" href="http://facebook.com/"></a></li>
         <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/"></a></li>
       </ul>
-      <div class="footer__wrap"><b class="footer__tagline">Давайте дружить, это выгодно!</b>
-        <p class="footer__text">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+      <p class="footer__slogan"><span class="footer__tagline">Давайте дружить, это выгодно!</span>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
   </body>
 </html>

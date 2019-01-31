@@ -3,42 +3,42 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     title HTML Academy: Нёрдс
+    link(rel="stylesheet" type="text/css" href="css/normalize.min.css")
     link(rel="stylesheet" type="text/css" href="css/styles.min.css")
-  body
-    header.header
+  body.page
+    header.main-header.page__main-header
       h1.visually-hidden Дизайн-студия Нёрдс
-      nav.navigation
-        img(src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нёрдс")
-        ul.menu
-          li.menu__item
-            a(href="about.html") Студия
-          li.menu__item
-            a(href="clients.html") Клиенты
-          li.menu__item
-            a(href="catalog.html") Магазин
-          li.menu__item
-            a(href="contacts.html") Контакты
-        a.cart(href="cart.html") Корзина
+      nav.main-navigation.header__main-navigation
+        a.logo.main-navigation__logo
+          img(src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нёрдс")
+        ul.main-navigation__list
+          li.main-navigation__item
+            a.main-navigation__link(href="about.html") Студия
+          li.main-navigation__item
+            a.main-navigation__link(href="clients.html") Клиенты
+          li.main-navigation__item
+            a.main-navigation__link(href="catalog.html") Магазин
+          li.main-navigation__item
+            a.main-navigation__link(href="contacts.html") Контакты
+          li.main-navigation__item
+            a.main-navigation__link(href="cart.html") Корзина
 
-    main.main
-      section.services
+    main.main.page__main
+      section.services.main__services
         h2.visually-hidden Услуги
         ul.services__list
           li.services__item
             div.services__thumbnail.services__thumbnail--web
-              img(src="http://placehold.it/300x146" width="300" height="146" alt="Создание сайтов")
             h3.services__heading Веб-сайты
             p.services__description Мир никогда не будет прежним после того как увидит ваш сайт!
             a(href="order.html").services__button.p.services__button--web ЗАКАЗАТЬ
           li.services__item
             div.services__thumbnail.services__thumbnail--app
-              img(src="http://placehold.it/300x146" width="300" height="146" alt="Создание мобильных приложений")
             h3.services__heading Приложения
             p.services__description Покорите топ-10 приложений в AppStore и Google Play
             a(href="order.html").services__button.p.services__button--app ЗАКАЗАТЬ
           li.services__item
             div.services__thumbnail.services__thumbnail--presentation
-              img(src="http://placehold.it/300x146" width="300" height="146" alt="Подготовка презентаций")
             h3.services__heading Презентации
             p.services__description Вы даже не подозреваете, насколько вы изумительны!
             a(href="order.html").services__button.p.services__button--presentation ЗАКАЗАТЬ
