@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
-</head>
-<body class="page">
+{% extends "twig/layout.twig" %}
+
+{% block page %}
 <header class="header page__main-header">
   <nav class="main-navigation">
     <a class="logo main-navigation__logo" href="index.html">
@@ -141,22 +135,4 @@
     </aside>
   </section>
 </main>
-<footer class="footer page__footer">
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link social__link--vk" href="https://vk.com/"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--facebook" href="http://facebook.com/"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://www.instagram.com/"></a>
-    </li>
-  </ul>
-  <p class="footer__slogan">
-    <span class="footer__tagline">Давайте дружить, это выгодно!</span>
-    Скидка 10% для друзей из социальных сетей.
-  </p>
-</footer>
-</body>
-</html>
+{% endblock %}

@@ -5,7 +5,7 @@ const server = require('browser-sync').create()
 const csso = require('gulp-csso')
 const concatCss = require('gulp-concat-css')
 const rename = require('gulp-rename')
-const pug = require('gulp-pug')
+const twig = require('gulp-twig')
 
 gulp.task('styles', function () {
   return gulp
@@ -21,8 +21,8 @@ gulp.task('styles', function () {
 })
 
 gulp.task('html', function () {
-  return gulp.src('src/*.pug')
-    .pipe(pug({pretty: true}))
+  return gulp.src('src/*.twig')
+    .pipe(twig())
     .pipe(gulp.dest('./'))
 })
 
@@ -41,7 +41,7 @@ gulp.task('server', function () {
   })
 
   gulp.watch('src/styles/**/*.css', gulp.series('styles', 'reload'))
-  gulp.watch('src/**/*.pug', gulp.series('html', 'reload'))
+  gulp.watch('src/**/*.twig', gulp.series('html', 'reload'))
   gulp.watch('img/**.*', gulp.series('build', 'reload'))
 })
 
