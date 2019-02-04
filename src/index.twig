@@ -27,10 +27,106 @@
   </nav>
 </header>
 <main class="main page__main">
-  {% include 'twig/slider.twig' %}
-  {% include 'twig/services.twig' %}
-  {% include 'twig/about.twig' %}
-  {% include 'twig/clients.twig' %}
-  {% include 'twig/contacts.twig' %}
+  <section class="slider main__slider">
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <ul class="slider__list">
+      <li class="slider__item">
+        <p class="slider__tagline">Долго, дорого, скрупулезно.</p>
+        <p class="slider__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slider__button" href="services.html"></a>
+      </li>
+      <li class="slider__item">
+        <p class="slider__tagline">Любим математику как никто другой</p>
+        <p class="slider__description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="slider__button" href="services.html"></a>
+      </li>
+      <li class="slider__item">
+        <p class="slider__tagline">Только ночь, только хардкор</p>
+        <p class="slider__description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        <a class="slider__button" href="services.html"></a>
+      </li>
+    </ul>
+  </section>
+  <section class="services main__services">
+    <h2 class="visually-hidden">Услуги</h2>
+    <ul class="services__list">
+      <li class="services__item">
+        <div class="services__thumbnail services__thumbnail--web"></div>
+        <h3 class="services__heading">Веб-сайты</h3>
+        <p class="services__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p><a class="services__button p services__button--web" href="order.html">ЗАКАЗАТЬ</a>
+      </li>
+      <li class="services__item">
+        <div class="services__thumbnail services__thumbnail--app"></div>
+        <h3 class="services__heading">Приложения</h3>
+        <p class="services__description">Покорите топ-10 приложений в AppStore и Google Play</p><a class="services__button p services__button--app" href="order.html">ЗАКАЗАТЬ</a>
+      </li>
+      <li class="services__item">
+        <div class="services__thumbnail services__thumbnail--presentation"></div>
+        <h3 class="services__heading">Презентации</h3>
+        <p class="services__description">Вы даже не подозреваете, насколько вы изумительны!</p><a class="services__button p services__button--presentation" href="order.html">ЗАКАЗАТЬ</a>
+      </li>
+    </ul>
+  </section>
+  <section class="about main__about">
+    <div class="about__wrap">
+      <p class="about__tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <p class="about__services-tagline"></p>
+      <ul class="about__services-list">
+        <li class="about__services-item">Веб-сайтов любой сложности</li>
+        <li class="about__services-item">Мобильных приложений для iOS и Android</li>
+        <li class="about__services-item">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+    <section class="stats">
+      <img src="http://placehold.it/360x208" width="360" height="208" alt="Логотип Нёрдс с декоративными элементами">
+      <h2 class="stats__tagline">с 2004 года Любим точность во всем:</h2>
+      <ul class="stats__list">
+        <li class="stats__item">
+          <span class="stats__number">146</span>
+          <span class="stats__percent">%</span>
+          Уровень самоотдачи
+        </li>
+        <li class="stats__item">
+          <span class="stats__number">100</span>
+          <span class="stats__percent">%</span>
+          Соблюдение сроков
+        </li>
+        <li class="stats__item">
+          <span class="stats__number">50</span>
+          <span class="stats__percent">%</span>
+          Минимальная предоплата
+        </li>
+      </ul>
+    </section>
+  </section>
+  <section class="clients main__clients">
+    <h2 class="visually-hidden">Наши клиенты</h2>
+    <ul class="clients__list">
+      <li class="clients__item">
+        <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип HTML Академии">
+      </li>
+      <li class="clients__item">
+        <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Барбершоп Бородинский">
+      </li>
+      <li class="clients__item">
+        <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Пинк">
+      </li>
+      <li class="clients__item">
+        <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Мишка">
+      </li>
+    </ul>
+  </section>
+  <section class="contacts main__contacts">
+    <div class="contacts__address-wrap">
+      <address class="contacts__address">
+        <p class="contacts__recipient">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts__text">тел. +7 (812) 275-75-75</p>
+      </address>
+      <a href="writeus.html" class="contacts__button"></a>
+    </div>
+    <img class="contacts__map" src="http://placehold.it/1440x416" alt="Схема проезда" width="1440" height="416">
+  </section>
 </main>
 {% endblock %}
