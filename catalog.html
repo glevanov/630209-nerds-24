@@ -80,7 +80,16 @@
       </form>
     </aside>
     <div class="catalog__cards-wrap">
-      <span>Здесь будет сортировка</span>
+      <div class="sort">
+        <p class="sort__lead">Здесь будет сортировка</p>
+        <ul class="sort__list">
+          <li class="sort__item">По цене</li>
+          <li class="sort__item">По типу</li>
+          <li class="sort__item">По названию</li>
+        </ul>
+        <button class="sort__button sort__button--descending sort__button--active" aria-label="Сортировать по убыванию"></button>
+        <button class="sort__button sort__button--ascending" aria-label="Сортировать по возрастанию"></button>
+      </div>
       <ul class="cards catalog__cards">
         <li class="cards__item">
           <img class="cards__preview" src="http://placehold.it/360x576" alt="Седона">
