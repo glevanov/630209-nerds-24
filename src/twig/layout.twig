@@ -8,22 +8,6 @@
 </head>
 <body class="page">
 {% block page %}{% endblock %}
-<footer class="footer page__footer">
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link social__link--vk" href="https://vk.com/"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--facebook" href="http://facebook.com/"></a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://www.instagram.com/"></a>
-    </li>
-  </ul>
-  <p class="footer__slogan">
-    <span class="footer__tagline">Давайте дружить, это выгодно!</span>
-    Скидка 10% для друзей из социальных сетей.
-  </p>
-</footer>
+{% include 'footer.twig' %}
 </body>
 </html>

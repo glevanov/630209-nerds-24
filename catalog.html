@@ -34,9 +34,30 @@
 <main class="main page__main">
   <h1 class="main__heading">Магазин готовых шаблонов</h1>
   <section class="catalog main__catalog">
-    <h2 class="visually-hidden">Каталог шаблонов</h2>
+    <header class="sort catalog__header">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <p class="sort__lead">СОРТИРОВАТЬ:</p>
+      <ul class="sort__list">
+        <li class="sort__item">
+          <a class="sort__type sort__type--active" href="?sort-by=price">По цене</a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__type" href="?sort-by=type">По типу</a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__type" href="?sort-by=name">По названию</a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__order sort__order--descending sort__order--active" href="?sort-order=desc" aria-label="Сортировать по убыванию"></a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__order sort__order--ascending" href="?sort-order=asc" aria-label="Сортировать по возрастанию"></a>
+        </li>
+      </ul>
+    </header>
     <aside class="filters catalog__filters">
       <form>
+        <span>Здесь будет range</span>
         <fieldset class="filters__fieldset">
           <legend class="filters__heading">Сетка:</legend>
           <p class="filters__option">
@@ -80,65 +101,93 @@
     </aside>
     <ul class="cards catalog__cards">
       <li class="cards__item">
-        <img class="cards__preview" src="http://placehold.it/360x576" alt="Седона">
-        <div class="cards__description">
-          <a class="cards__link" href="sedona.html">
-            <h3 class="cards__heading">Sedona</h3>
-          </a>
-          <p class="cards__text">Информационный сайт для туристов</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="Седона">
+          <div class="cards__description">
+            <a class="cards__link" href="sedona.html">
+              <h3 class="cards__heading">Sedona</h3>
+            </a>
+            <p class="cards__text">Информационный сайт для туристов</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
       <li class="cards__item">
-        <img class="cards__preview" src="http://placehold.it/360x576" alt="Пинк">
-        <div class="cards__description">
-          <a class="cards__link" href="pink.html">
-            <h3 class="cards__heading">Pink App</h3>
-          </a>
-          <p class="cards__text">Продуктовый лендинг приложения для iOS и Android</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="Пинк">
+          <div class="cards__description">
+            <a class="cards__link" href="pink.html">
+              <h3 class="cards__heading">Pink App</h3>
+            </a>
+            <p class="cards__text">Продуктовый лендинг приложения для iOS и Android</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
       <li class="cards__item">
-        <img class="cards__preview" src="http://placehold.it/360x576" alt="Барбершоп">
-        <div class="cards__description">
-          <a class="cards__link" href="barbershop.html">
-            <h3 class="cards__heading">Barbershop</h3>
-          </a>
-          <p class="cards__text">Сайт салона красоты. Для мужчин, да.</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="Барбершоп">
+          <div class="cards__description">
+            <a class="cards__link" href="barbershop.html">
+              <h3 class="cards__heading">Barbershop</h3>
+            </a>
+            <p class="cards__text">Сайт салона красоты. Для мужчин, да.</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
       <li class="cards__item">
-        <img class="cards__preview" src="http://placehold.it/360x576" alt="Мишка">
-        <div class="cards__description">
-          <a class="cards__link" href="mishka.html">
-            <h3 class="cards__heading">MISHKA</h3>
-          </a>
-          <p class="cards__text">Интернет-магазин вязаных игрушек</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="Мишка">
+          <div class="cards__description">
+            <a class="cards__link" href="mishka.html">
+              <h3 class="cards__heading">MISHKA</h3>
+            </a>
+            <p class="cards__text">Интернет-магазин вязаных игрушек</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
       <li class="cards__item">
-        <img class="cards__preview" src="http://placehold.it/360x576" alt="А Плюс">
-        <div class="cards__description">
-          <a class="cards__link" href="aplus.html">
-            <h3 class="cards__heading">A Plus</h3>
-          </a>
-          <p class="cards__text">Лендинг курсов повышения квалификации</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="А Плюс">
+          <div class="cards__description">
+            <a class="cards__link" href="aplus.html">
+              <h3 class="cards__heading">A Plus</h3>
+            </a>
+            <p class="cards__text">Лендинг курсов повышения квалификации</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
-      <li class="cards__item"><img class="cards__preview" src="http://placehold.it/360x576" alt="Кваст">
-        <div class="cards__description">
-          <a class="cards__link" href="kvast.html">
-            <h3 class="cards__heading">Кваст</h3>
-          </a>
-          <p class="cards__text">Промо-сайт производителя крафтового кваса</p>
-          <p class="cards__button">9 900 руб.</p>
-        </div>
+      <li class="cards__item">
+        <article class="cards__card">
+          <img class="cards__preview" src="http://placehold.it/360x576" alt="Кваст">
+          <div class="cards__description">
+            <a class="cards__link" href="kvast.html">
+              <h3 class="cards__heading">Кваст</h3>
+            </a>
+            <p class="cards__text">Промо-сайт производителя крафтового кваса</p>
+            <p class="cards__button">9 900 руб.</p>
+          </div>
+        </article>
       </li>
     </ul>
+    <footer class="pagination">
+      <a href="previous.html" class="pagination__button" hidden>предыдущая</a>
+      <ul class="pagination__list">
+        <li class="pagination__item pagination__item--current">
+          <a class="pagination__link" href="1.html" aria-label="Переход на страницу 1">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="2.html" aria-label="Переход на страницу 2">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="3.html" aria-label="Переход на страницу 3">3</a>
+        </li>
+      </ul>
+      <a href="next.html" class="pagination__button">следующая</a>
+    </footer>
   </section>
 </main>
 <footer class="footer page__footer">

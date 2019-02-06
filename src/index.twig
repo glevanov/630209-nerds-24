@@ -27,6 +27,26 @@
   </nav>
 </header>
 <main class="main page__main">
+  <section class="slider main__slider">
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <ul class="slider__list">
+      <li class="slider__item">
+        <p class="slider__tagline">Долго, дорого, скрупулезно.</p>
+        <p class="slider__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slider__button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+      <li class="slider__item">
+        <p class="slider__tagline">Любим математику как никто другой</p>
+        <p class="slider__description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="slider__button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+      <li class="slider__item">
+        <p class="slider__tagline">Только ночь, только хардкор</p>
+        <p class="slider__description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        <a class="slider__button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+    </ul>
+  </section>
   <section class="services main__services">
     <h2 class="visually-hidden">Услуги</h2>
     <ul class="services__list">
@@ -46,6 +66,79 @@
         <p class="services__description">Вы даже не подозреваете, насколько вы изумительны!</p><a class="services__button p services__button--presentation" href="order.html">ЗАКАЗАТЬ</a>
       </li>
     </ul>
+  </section>
+  <section class="about main__about">
+    <div class="about__wrap">
+      <p class="about__tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <p class="about__services-tagline"></p>
+      <ul class="about__services-list">
+        <li class="about__services-item">Веб-сайтов любой сложности</li>
+        <li class="about__services-item">Мобильных приложений для iOS и Android</li>
+        <li class="about__services-item">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+    <aside class="stats">
+      <img src="http://placehold.it/360x208" width="360" height="208" alt="Логотип Нёрдс с декоративными элементами">
+      <table class="stats__table">
+        <caption class="stats__tagline">с 2004 года Любим точность во всем:</caption>
+        <tbody class="stats__table-body">
+          <tr class="stats__row">
+            <td class="stats__item">
+              <span class="stats__number">146</span>
+              <span class="stats__percent">%</span>
+            </td>
+            <td class="stats__item">
+              <span class="stats__number">100</span>
+              <span class="stats__percent">%</span>
+            </td>
+            <td class="stats__item">
+              <span class="stats__number">50</span>
+              <span class="stats__percent">%</span>
+            </td>
+          </tr>
+          <tr class="stats__row">
+            <th class="stats__heading">Уровень самоотдачи</th>
+            <th class="stats__heading">Соблюдение сроков</th>
+            <th class="stats__heading">Минимальная предоплата</th>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+  </section>
+  <section class="clients main__clients">
+    <h2 class="visually-hidden">Наши клиенты</h2>
+    <ul class="clients__list">
+      <li class="clients__item">
+        <a href="https://htmlacademy.ru/">
+          <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип HTML Академии">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="barbershop.html">
+          <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Барбершоп Бородинский">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="pink.html">
+          <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Пинк">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="mishka.html">
+          <img src="http://placehold.it/260x180" width="260" height="180" alt="Логотип Мишка">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="contacts main__contacts">
+    <address class="contacts__address">
+      <p class="contacts__recipient">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="contacts__button" href="writeus.html"></a>
+    </address>
+    <img class="contacts__map" src="http://placehold.it/1440x416" alt="Схема проезда" width="1440" height="416">
   </section>
 </main>
 {% endblock %}
