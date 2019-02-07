@@ -57,7 +57,26 @@
     </header>
     <aside class="filters catalog__filters">
       <form>
-        <span>Здесь будет range</span>
+        <fieldset class="filters__range">
+          <legend class="filters__heading">СТОИМОСТЬ:</legend>
+          <div class="range">
+            <div class="range__pins-wrap">
+              <span class="range__pin range__pin--start" aria-label="Ползунок нижней границы цены"></span>
+              <span class="range__pin range__pin--end" aria-label="Ползунок верхней границы цены"></span>
+              <div class="range__scale">
+                <span class="range__progressbar"></span>
+              </div>
+            </div>
+            <p class="range__inputs-wrap">
+              ОТ
+              <label class="visually-hidden" for="range-start">Ввод нижней границы цены</label>
+              <input class="range__input range__input--start" type="number" id="range-start" value="0">
+              ДО
+              <label class="visually-hidden" for="range-end">Ввод верхней границы цены</label>
+              <input class="range__input range__input--end" type="number" id="range-end" value="15000">
+            </p>
+          </div>
+        </fieldset>
         <fieldset class="filters__fieldset">
           <legend class="filters__heading">Сетка:</legend>
           <p class="filters__option">
