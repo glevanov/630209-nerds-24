@@ -1,11 +1,4 @@
 .main-header {
   background-color: #eeeeee;
-  margin-bottom: 20px;
   padding-top: 50px;
-}
-
-.main-header__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1160px;
 }

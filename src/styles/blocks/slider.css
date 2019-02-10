@@ -1,6 +1,5 @@
 .slider {
   background-color: #eeeeee;
-  min-height: 430px;
 }
 
 .slider__list {
@@ -14,12 +13,15 @@
   font-weight: 500;
   line-height: 55px;
   margin: 0;
+  margin-bottom: 20px;
+  width: 560px;
 }
 
 .slider__description {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .slider__button {
@@ -35,4 +37,23 @@
   text-align: center;
   text-decoration: none;
   width: 240px;
+}
+
+.slider__item {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  min-height: 430px;
+  padding-top: 50px;
+}
+
+.slider__item--slide-1 {
+  background-image: url("../../img/slide1.jpg");
+}
+
+.slider__item--slide-2 {
+  background-image: url("../../img/slide2.jpg");
+}
+
+.slider__item--slide-3 {
+  background-image: url("../../img/slide3.jpg");
 }
