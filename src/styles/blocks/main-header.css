@@ -1,0 +1,11 @@
+.main-header {
+  background-color: #eeeeee;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.main-header__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+}
