@@ -43,8 +43,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page {
+  font-family: Roboto, Arial, sans-serif;
   background-color: #ffffff;
-  font-family: Roboto, sans-serif;
 }
 
 .wrapper {
@@ -54,8 +54,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  background-color: #eeeeee;
   padding-top: 50px;
+  background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -65,11 +65,11 @@ input[type="radio"].visually-hidden {
 
 .main-navigation__list {
   display: flex;
-  list-style: none;
   margin: 0;
   margin-left: 200px;
   padding: 0;
   width: 100%;
+  list-style: none;
 }
 
 .main-navigation__item {
@@ -82,12 +82,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation__link {
-  color: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
+  color: inherit;
 }
 
 .main-navigation__link--cart {
@@ -95,16 +95,16 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation__link--cart::before {
+  left: -40px;
+  position: absolute;
+  top: 2px;
+  height: 15px;
+  width: 15px;
   background-color: transparent;
   background-image: url("../img/icon-cart.svg");
   background-position: center;
   background-repeat: no-repeat;
   content: "";
-  height: 15px;
-  left: -40px;
-  position: absolute;
-  top: 2px;
-  width: 15px;
 }
 
 .slider {
@@ -112,47 +112,47 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .slider__tagline {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
   margin: 0;
   margin-bottom: 20px;
   width: 560px;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
 }
 
 .slider__description {
-  font-size: 16px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .slider__button {
-  background-color: #fb565a;
-  border-radius: 2px;
-  color: #ffffff;
   display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 240px;
   font-size: 16px;
   font-weight: 500;
   line-height: 14px;
-  padding-bottom: 10px;
-  padding-top: 10px;
   text-align: center;
   text-decoration: none;
-  width: 240px;
+  background-color: #fb565a;
+  border-radius: 2px;
+  color: #ffffff;
 }
 
 .slider__item {
-  background-position: bottom right;
-  background-repeat: no-repeat;
   min-height: 430px;
   padding-top: 50px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 .slider__item--slide-1 {
@@ -165,4 +165,91 @@ input[type="radio"].visually-hidden {
 
 .slider__item--slide-3 {
   background-image: url("../img/slide3.jpg");
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1110px;
+  list-style: none;
+}
+
+.services__item {
+  width: 300px;
+}
+
+.services__thumbnail {
+  height: 146px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services__thumbnail--web {
+  background-color: #fb565a;
+  background-image: url("../img/services-html.jpg");
+}
+
+.services__thumbnail--app {
+  background-color: #00ca74;
+  background-image: url("../img/services-app.jpg");
+}
+
+.services__thumbnail--presentation {
+  background-color: #efc849;
+  background-image: url("../img/services-presentation.jpg");
+}
+
+.services__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 160px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.services__button--web {
+  background-color: #fb565a;
+}
+
+.services__button--app {
+  background-color: #00ca74;
+}
+
+.services__button--presentation {
+  background-color: #efc849;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator::after {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #eeeeee;
+  content: "";
 }

@@ -1,0 +1,75 @@
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1110px;
+
+  list-style: none;
+}
+
+.services__item {
+  width: 300px;
+}
+
+.services__thumbnail {
+  height: 146px;
+  width: 300px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services__thumbnail--web {
+  background-color: #fb565a;
+  background-image: url("../../img/services-html.jpg");
+}
+
+.services__thumbnail--app {
+  background-color: #00ca74;
+  background-image: url("../../img/services-app.jpg");
+}
+
+.services__thumbnail--presentation {
+  background-color: #efc849;
+  background-image: url("../../img/services-presentation.jpg");
+}
+
+.services__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 160px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.services__button--web {
+  background-color: #fb565a;
+}
+
+.services__button--app {
+  background-color: #00ca74;
+}
+
+.services__button--presentation {
+  background-color: #efc849;
+}
