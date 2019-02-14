@@ -1,0 +1,12 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.clients__item {
+  opacity: 0.2;
+}

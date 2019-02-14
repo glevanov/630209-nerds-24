@@ -240,16 +240,72 @@ input[type="radio"].visually-hidden {
 }
 
 .separator {
-  position: relative;
+  border-bottom: 1px solid #eeeeee;
 }
 
-.separator::after {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #eeeeee;
-  content: "";
+.about {
+  display: flex;
+}
+
+.about__tagline {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about__services-tagline {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about__services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__services-item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clients__item {
+  opacity: 0.2;
+}
+
+.stats__tagline {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats__number {
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.stats__percent {
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.stats__heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 }

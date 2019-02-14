@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+}
+
+.about__tagline {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about__services-tagline {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about__services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__services-item {
+  font-size: 16px;
+  line-height: 24px;
+}

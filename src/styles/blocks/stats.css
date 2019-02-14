@@ -1,0 +1,22 @@
+.stats__tagline {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats__number {
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.stats__percent {
+  font-size: 45px;
+  line-height: 10px;
+}
+
+.stats__heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
