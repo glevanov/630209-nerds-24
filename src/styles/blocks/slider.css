@@ -3,47 +3,53 @@
 }
 
 .slider__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .slider__tagline {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
   margin: 0;
   margin-bottom: 20px;
   width: 560px;
+
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
 }
 
 .slider__description {
-  font-size: 16px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .slider__button {
-  background-color: #fb565a;
-  border-radius: 2px;
-  color: #ffffff;
   display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 240px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 14px;
-  padding-bottom: 10px;
-  padding-top: 10px;
   text-align: center;
   text-decoration: none;
-  width: 240px;
+
+  background-color: #fb565a;
+  border-radius: 2px;
+  color: #ffffff;
 }
 
 .slider__item {
-  background-position: bottom right;
-  background-repeat: no-repeat;
   min-height: 430px;
   padding-top: 50px;
+
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 .slider__item--slide-1 {
