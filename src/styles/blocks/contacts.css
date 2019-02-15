@@ -1,0 +1,87 @@
+.contacts {
+  position: relative;
+
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts::before {
+  position: absolute;
+  right: 390px;
+  top: 90px;
+
+  display: block;
+  height: 190px;
+  width: 231px;
+
+  background-image: url("../../img/map-marker.png");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.contacts__address {
+  position: absolute;
+  left: 140px;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: calc(320px - 50px * 2);
+
+  font-style: normal;
+
+  transform: translateY(-50%);
+
+  background-color: #ffffff;
+}
+
+.contacts__recipient {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts__tel {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.contacts__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 220px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border-radius: 2px;
+  color: #ffffff;
+}
