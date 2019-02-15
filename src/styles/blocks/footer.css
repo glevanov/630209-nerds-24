@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer__slogan {
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__tagline {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}

@@ -3,3 +3,7 @@
   margin-right: auto;
   width: 1160px;
 }
+
+.wrapper--full-width {
+  width: 1440px;
+}
