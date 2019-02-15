@@ -27,6 +27,24 @@
 }
 
 .about__services-item {
+  position: relative;
+
+  margin-left: 35px;
+
   font-size: 16px;
   line-height: 24px;
+}
+
+.about__services-item::before {
+  position: absolute;
+  left: -35px;
+  top: 10px;
+
+  display: block;
+  height: 2px;
+  width: 25px;
+
+  background-color: #fb565a;
+
+  content: "";
 }

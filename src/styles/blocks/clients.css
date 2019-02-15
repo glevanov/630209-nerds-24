@@ -1,8 +1,14 @@
 .clients__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
+  width: 1080px;
 
   list-style: none;
 }

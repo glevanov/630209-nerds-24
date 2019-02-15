@@ -240,7 +240,7 @@ input[type="radio"].visually-hidden {
 }
 
 .separator {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .about {
@@ -271,15 +271,34 @@ input[type="radio"].visually-hidden {
 }
 
 .about__services-item {
+  position: relative;
+  margin-left: 35px;
   font-size: 16px;
   line-height: 24px;
 }
 
+.about__services-item::before {
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #fb565a;
+  content: "";
+}
+
 .clients__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
+  width: 1080px;
   list-style: none;
 }
 
@@ -287,25 +306,37 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
+.stats__table {
+  width: 360px;
+}
+
 .stats__tagline {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.stats__number {
+.stats__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100px;
   font-size: 45px;
   line-height: 10px;
+  text-align: left;
+  font-weight: 700;
 }
 
 .stats__percent {
-  font-size: 45px;
-  line-height: 10px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .stats__heading {
   font-size: 16px;
   font-weight: 400;
+  text-align: left;
   line-height: 18px;
 }
