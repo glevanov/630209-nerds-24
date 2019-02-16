@@ -1,0 +1,150 @@
+.feedback {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  display: block;
+  width: 960px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+  transform: translate(-50%, -50%);
+}
+
+.feedback__lead {
+  margin: 0;
+  margin-top: 65px;
+  margin-bottom: 43px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.feedback__label {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.feedback__input {
+  width: 360px;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-top: 10px;
+}
+
+.feedback__textarea {
+  width: 760px;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  margin-top: 10px;
+
+  resize: none;
+}
+
+.feedback__input,
+.feedback__textarea {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  opacity: 0.5;
+  outline: none;
+}
+
+.feedback__input:hover,
+.feedback__textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback__input:focus,
+.feedback__textarea:focus {
+  border-color: #000000;
+  opacity: 1;
+}
+
+.feedback__input:invalid,
+.feedback__textarea:invalid {
+  color: #e74246;
+  border-color: #e74246;
+  box-shadow: none;
+}
+
+.feedback__submit {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 100px;
+  margin-bottom: 85px;
+  width: 260px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  outline: none;
+}
+
+.feedback__submit:hover,
+.feedback__submit:focus {
+  background-color: #e74246;
+}
+
+.feedback__submit:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
+}
+
+.feedback__close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+
+  display: block;
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.feedback__close:hover,
+.feedback__close:focus {
+  opacity: 1;
+}
+
+.feedback__close:active {
+  opacity: 0.1;
+}
+
+.feedback__wrap {
+  width: 760px;
+  margin-left: 100px;
+}
+
+.feedback__wrap--input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}

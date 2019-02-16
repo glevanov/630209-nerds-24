@@ -1,4 +1,6 @@
 .page {
+  position: relative;
+
   font-family: Roboto, Arial, sans-serif;
 
   background-color: #ffffff;
