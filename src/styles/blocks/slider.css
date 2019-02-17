@@ -11,7 +11,8 @@
 
 .slider__tagline {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: 73px;
   width: 560px;
 
   font-size: 55px;
@@ -21,7 +22,7 @@
 
 .slider__description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   font-size: 16px;
   line-height: 24px;
@@ -32,15 +33,16 @@
 }
 
 .slider__item {
-  min-height: 430px;
-  padding-top: 50px;
+  min-height: 425px;
 
   background-position: bottom right;
   background-repeat: no-repeat;
+  border: 0.1px solid transparent;
 }
 
 .slider__item--slide-1 {
   background-image: url("../../img/slide1.jpg");
+  background-position: bottom right 30px;
 }
 
 .slider__item--slide-2 {

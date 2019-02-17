@@ -1,10 +1,14 @@
+.stats {
+  margin-left: auto;
+}
+
 .stats__table {
   width: 360px;
 }
 
 .stats__tagline {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 34px;
+  margin-bottom: 40px;
 
   font-size: 16px;
   line-height: 24px;
@@ -29,6 +33,8 @@
 }
 
 .stats__heading {
+  padding-top: 20px;
+
   font-size: 16px;
   font-weight: 400;
   text-align: left;

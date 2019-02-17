@@ -7,6 +7,7 @@
   display: flex;
   margin: 0;
   margin-left: 200px;
+  margin-top: 10px;
   padding: 0;
   width: 100%;
 
@@ -14,7 +15,11 @@
 }
 
 .main-navigation__item {
-  margin-right: 44px;
+  margin-right: 47px;
+}
+
+.main-navigation__item:last-of-type {
+  margin-right: 0;
 }
 
 .main-navigation__item--cart {

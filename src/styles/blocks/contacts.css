@@ -20,15 +20,14 @@
 .contacts__address {
   position: absolute;
   left: 140px;
-  top: 50%;
+  top: 210px;
 
   display: flex;
   flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   width: calc(320px - 50px * 2);
+  min-height: 308px;
 
   font-style: normal;
 
@@ -39,16 +38,19 @@
 
 .contacts__recipient {
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 47px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .contacts__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  width: 210px;
 
   font-size: 16px;
   line-height: 18px;
@@ -56,7 +58,7 @@
 
 .contacts__tel {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
 
   font-size: 16px;
   line-height: 18px;
