@@ -48,28 +48,7 @@
 }
 
 .services__button {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 160px;
-
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-decoration: none;
-
-  color: #ffffff;
-  border-radius: 2px;
 }
 
-.services__button--web {
-  background-color: #fb565a;
-}
 
-.services__button--app {
-  background-color: #00ca74;
-}
-
-.services__button--presentation {
-  background-color: #efc849;
-}
