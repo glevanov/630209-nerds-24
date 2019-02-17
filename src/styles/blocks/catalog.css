@@ -1,0 +1,7 @@
+.catalog {
+  display: flex;
+}
+
+.catalog__main-column {
+  width: 760px;
+}
