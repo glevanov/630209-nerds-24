@@ -1,29 +1,31 @@
 {% extends "twig/layout.twig" %}
 
 {% block page %}
-<header class="header page__main-header">
-  <nav class="main-navigation">
-    <a class="logo main-navigation__logo" href="index.html">
-      <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
-    </a>
-    <ul class="main-navigation__list">
-      <li class="main-navigation__item">
-        <a class="main-navigation__link" href="about.html">Студия</a>
-      </li>
-      <li class="main-navigation__item">
-        <a class="main-navigation__link" href="clients.html">Клиенты</a>
-      </li>
-      <li class="main-navigation__item">
-        <a class="main-navigation__link main-navigation__link--inactive main-navigation__link--current">Магазин</a>
-      </li>
-      <li class="main-navigation__item">
-        <a class="main-navigation__link" href="contacts.html">Контакты</a>
-      </li>
-      <li class="main-navigation__item">
-        <a class="main-navigation__link" href="cart.html">Корзина</a>
-      </li>
-    </ul>
-  </nav>
+<header class="main-header page__main-header">
+  <div class="wrapper">
+    <nav class="main-navigation">
+      <a class="logo main-navigation__logo" href="index.html">
+        <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="about.html">Студия</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="clients.html">Клиенты</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--inactive main-navigation__link--current">Магазин</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="contacts.html">Контакты</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--cart">
+          <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="main page__main">
   <h1 class="main__heading">Магазин готовых шаблонов</h1>
