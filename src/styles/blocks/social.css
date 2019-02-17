@@ -15,7 +15,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 78px;
   width: 78px;
 
@@ -25,14 +27,16 @@
   border-radius: 50%;
 }
 
-.social__link--vk {
-  background-image: url("../../img/icon-vk.svg");
+.social__link:hover,
+.social__link:focus {
+  background-color: #e74246;
 }
 
-.social__link--facebook {
-  background-image: url("../../img/icon-fb.svg");
+.social__link:active {
+  background-color: #d7373b;
+
 }
 
-.social__link--instagram {
-  background-image: url("../../img/icon-insta.svg");
+.social__link:active .social__icon {
+  opacity: 0.5;
 }

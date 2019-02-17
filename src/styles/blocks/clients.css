@@ -13,6 +13,15 @@
   list-style: none;
 }
 
-.clients__item {
+.clients__link {
   opacity: 0.2;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  opacity: 1;
+}
+
+.clients__link:active {
+  opacity: 0.1;
 }
