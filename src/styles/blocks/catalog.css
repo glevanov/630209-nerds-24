@@ -5,3 +5,7 @@
 .catalog__main-column {
   width: 760px;
 }
+
+.catalog__cards {
+  margin-bottom: 60px;
+}

@@ -60,10 +60,6 @@ input[type="radio"].visually-hidden {
   margin-top: 40px;
 }
 
-.main__contacts {
-  margin-top: 80px;
-}
-
 .main__heading {
   display: block;
   margin: 0 auto;
@@ -283,6 +279,7 @@ input[type="radio"].visually-hidden {
   width: 660px;
   font-size: 45px;
   line-height: 45px;
+  letter-spacing: 0.3px;
 }
 
 .about__description {
@@ -486,9 +483,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-  display: flex;
-  padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.footer__contacts {
+  margin-top: 80px;
 }
 
 .footer__slogan {
@@ -506,6 +505,12 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  letter-spacing: 0.3px;
+}
+
+.footer__wrap {
+  display: flex;
+  padding-top: 70px;
 }
 
 .social {
@@ -808,14 +813,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.catalog {
-  display: flex;
-}
-
-.catalog__main-column {
-  width: 760px;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -927,6 +924,18 @@ input[type="radio"].visually-hidden {
 .cards__button {
   width: 200px;
   margin-bottom: 44px;
+}
+
+.catalog {
+  display: flex;
+}
+
+.catalog__main-column {
+  width: 760px;
+}
+
+.catalog__cards {
+  margin-bottom: 60px;
 }
 
 .pagination {
