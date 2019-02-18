@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+}
+
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 11px;
+}
+
+.pagination__item:last-of-type {
+  margin-right: 0;
+}
+
+.pagination__button {
+  width: 260px;
+}
+
+.pagination__button:first-of-type {
+  margin-right: 11px;
+}
+
+.pagination__button:last-of-type {
+  margin-left: 11px;
+}
+
+.pagination__button--inactive {
+  display: none;
+}
+
+.pagination__link {
+  width: 50px;
+}
+
+.pagination__item--current .pagination__link {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}

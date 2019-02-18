@@ -1,7 +1,11 @@
 .button {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 18px;
@@ -52,4 +56,19 @@
 
 .button--presentation:active {
   background-color: #e5a722;
+}
+
+.button--pagination {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.button--pagination:hover,
+.button--pagination:focus {
+  background-color: #dfdfdf;
+}
+
+.button--pagination:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
 }
