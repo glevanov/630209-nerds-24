@@ -58,17 +58,17 @@
   background-color: #e5a722;
 }
 
-.button--pagination {
+.button--accent {
   background-color: #eeeeee;
   color: #000000;
 }
 
-.button--pagination:hover,
-.button--pagination:focus {
+.button--accent:hover,
+.button--accent:focus {
   background-color: #dfdfdf;
 }
 
-.button--pagination:active {
+.button--accent:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
 }

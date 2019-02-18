@@ -33,28 +33,7 @@
 </header>
 <main class="main page__main">
   <h1 class="main__heading">Магазин готовых шаблонов</h1>
-  <section class="catalog main__catalog">
-    <header class="sort catalog__header">
-      <h2 class="visually-hidden">Каталог шаблонов</h2>
-      <p class="sort__lead">СОРТИРОВАТЬ:</p>
-      <ul class="sort__list">
-        <li class="sort__item">
-          <a class="sort__type sort__type--active" href="?sort-by=price">По цене</a>
-        </li>
-        <li class="sort__item">
-          <a class="sort__type" href="?sort-by=type">По типу</a>
-        </li>
-        <li class="sort__item">
-          <a class="sort__type" href="?sort-by=name">По названию</a>
-        </li>
-        <li class="sort__item">
-          <a class="sort__order sort__order--descending sort__order--active" href="?sort-order=desc" aria-label="Сортировать по убыванию"></a>
-        </li>
-        <li class="sort__item">
-          <a class="sort__order sort__order--ascending" href="?sort-order=asc" aria-label="Сортировать по возрастанию"></a>
-        </li>
-      </ul>
-    </header>
+  <section class="catalog main__catalog wrapper">
     <aside class="filters catalog__filters">
       <form>
         <fieldset class="filters__range">
@@ -115,7 +94,7 @@
             <label class="filters__label filters__label--checkbox" for="basket">Корзина</label>
           </p>
         </fieldset>
-        <button class="filters__button">ПОКАЗАТЬ</button>
+        <button class="filters__button button button--accent">ПОКАЗАТЬ</button>
       </form>
     </aside>
     <ul class="cards catalog__cards">

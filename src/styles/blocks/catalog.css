@@ -1,9 +1,11 @@
 .catalog {
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog__main-column {
   width: 760px;
+  margin-right: 20px;
 }
 
 .catalog__cards {

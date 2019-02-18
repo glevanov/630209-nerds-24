@@ -1,2 +1,7 @@
 .filters {
+  width: 260px;
+}
+
+.filters__button {
+  width: 260px;
 }
