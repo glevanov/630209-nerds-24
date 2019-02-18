@@ -25,12 +25,50 @@
   position: relative;
 
   width: 360px;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.cards__card::before {
+  position: absolute;
+  top: -40px;
+  left: 0;
+
+  height: 40px;
+  width: 100%;
+
+  background-image: url("../../img/cards-top.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+
+  content: "";
+}
+
+.cards__card:hover::before {
+  opacity: 1;
+}
+
+.cards__card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  box-shadow: inset -1px -1px 0 #e5e5e5, inset 1px 1px 0 #e5e5e5;
+
+  content: "";
 }
 
 .cards__preview {
   position: relative;
   z-index: 50;
 }
+
 
 .cards__description {
   position: absolute;
@@ -41,6 +79,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   min-height: 231px;
   width: 100%;
   padding-top: 25px;
