@@ -822,6 +822,7 @@ input[type="radio"].visually-hidden {
 .cards__card {
   position: relative;
   width: 360px;
+  height: 578px;
   margin-top: 40px;
   box-sizing: border-box;
 }
