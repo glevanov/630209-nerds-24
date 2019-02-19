@@ -5,3 +5,16 @@
 .filters__button {
   width: 260px;
 }
+
+.filters__heading {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filters__fieldset {
+  padding: 0;
+
+  border: none;
+}
