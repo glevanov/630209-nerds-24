@@ -32,27 +32,27 @@
   <section class="catalog main__catalog wrapper">
     <aside class="filters catalog__filters">
       <form>
-        <fieldset class="range filters__fieldset">
+        <fieldset class="range filters__fieldset filters__fieldset--range">
           <legend class="filters__heading">Стоимость:</legend>
           <div class="range__controls">
             <div class="range__scale">
-              <div class="range__bar" style="margin-left: 20%; width: 30%"></div>
+              <div class="range__bar"></div>
             </div>
             <div class="range__toggle range__toggle--min"></div>
             <div class="range__toggle range__toggle--max"></div>
           </div>
           <div class="range__price-controls">
-            <label class="range__label">
+            <label class="range__label range__label--min">
               от
               <input class="range__input" name="min-price" type="text" value="0">
             </label>
-            <label class="range__label">
+            <label class="range__label range__label--max">
               до
               <input class="range__input" name="max-price" type="text" value="15 000">
             </label>
           </div>
         </fieldset>
-        <fieldset class="filters__fieldset">
+        <fieldset class="filters__fieldset filters__fieldset--grid">
           <legend class="filters__heading">Сетка:</legend>
           <p class="filters__option">
             <input class="filters__input visually-hidden" type="radio" id="adaptive" name="grid" checked>
@@ -67,7 +67,7 @@
             <label class="filters__label filters__label--radio" for="stretch">Резиновая</label>
           </p>
         </fieldset>
-        <fieldset class="filters__fieldset">
+        <fieldset class="filters__fieldset filters__fieldset--features">
           <legend class="filters__heading">ОСОБЕННОСТИ:</legend>
           <p class="filters__option">
             <input class="filters__input visually-hidden" type="checkbox" id="slider" name="features" checked>
@@ -123,7 +123,7 @@
               <a class="cards__link" href="sedona.html">
                 <h3 class="cards__heading">Sedona</h3>
               </a>
-              <p class="cards__text">Информационный сайт для туристов</p>
+              <p class="cards__text cards__text--narrow">Информационный сайт для туристов</p>
               <p class="cards__button button">9 900 руб.</p>
             </div>
           </article>
@@ -147,7 +147,7 @@
               <a class="cards__link" href="barbershop.html">
                 <h3 class="cards__heading">Barbershop</h3>
               </a>
-              <p class="cards__text">Сайт салона красоты. Для мужчин, да.</p>
+              <p class="cards__text cards__text--narrow">Сайт салона красоты. Для мужчин, да.</p>
               <p class="cards__button button">9 900 руб.</p>
             </div>
           </article>

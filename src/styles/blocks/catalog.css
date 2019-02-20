@@ -1,13 +1,17 @@
 .catalog {
   display: flex;
   justify-content: space-between;
+  margin-top: 55px;
 }
 
 .catalog__main-column {
   width: 760px;
-  margin-right: 20px;
 }
 
 .catalog__cards {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
+}
+
+.catalog__header {
+  margin-bottom: 58px;
 }

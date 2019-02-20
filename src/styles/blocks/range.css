@@ -44,23 +44,24 @@
 }
 
 .range__toggle--min {
-  left: 50px;
+  left: 20px;
 }
 
 .range__toggle--max {
-  left: 110px;
+  left: 160px;
 }
 
 .range__price-controls {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .range__label {
-  display: inline-block;
-  width: 50%;
-
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.range__label--min {
 }
 
 .range__input {

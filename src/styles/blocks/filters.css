@@ -19,6 +19,27 @@
   border: none;
 }
 
+.filters__fieldset--range {
+  margin-bottom: 55px;
+}
+
+.filters__fieldset--grid {
+  margin-bottom: 50px;
+}
+
+.filters__fieldset--features {
+  margin-bottom: 50px;
+}
+
+.filters__option {
+  margin-top: 17px;
+  margin-bottom: 21px;
+}
+
+.filters__option:last-of-type {
+  margin-bottom: 0;
+}
+
 .filters__label {
   position: relative;
 
