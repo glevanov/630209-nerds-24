@@ -53,7 +53,7 @@
       setActiveToggle(target);
       switchActiveSlide(target);
     }
-  }
+  };
 
   sliderControls.addEventListener('click', onToggleClick);
 })();
