@@ -57,11 +57,3 @@
 
   sliderControls.addEventListener('click', onToggleClick);
 })();
-
-// Переключение карты
-(function () {
-  var fallback = document.querySelector('.contacts__map');
-  var map = document.querySelector('.contacts__ya-map');
-  fallback.classList.add('visually-hidden');
-  map.classList.remove('visually-hidden');
-})();

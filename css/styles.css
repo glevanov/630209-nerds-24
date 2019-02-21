@@ -480,9 +480,23 @@ input[type="radio"].visually-hidden {
   content: "";
 }
 
-.contacts__ya-map {
-  z-index: 0;
+.contacts__map {
+  position: relative;
   min-height: 416px;
+}
+
+.contacts__placeholder {
+  position: relative;
+  z-index: 0;
+}
+
+.contacts__ya-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__address {
