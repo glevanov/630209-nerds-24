@@ -601,6 +601,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   left: 50%;
   top: 50%;
+  z-index: 500;
   display: block;
   width: 960px;
   background-color: #ffffff;
