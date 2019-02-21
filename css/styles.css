@@ -164,6 +164,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  position: relative;
   background-color: #eeeeee;
 }
 
@@ -186,6 +187,7 @@ input[type="radio"].visually-hidden {
 .slider__description {
   margin: 0;
   margin-bottom: 40px;
+  width: 410px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -212,6 +214,44 @@ input[type="radio"].visually-hidden {
 
 .slider__item--slide-3 {
   background-image: url("../img/slide3.jpg");
+}
+
+.slider__controls {
+  position: absolute;
+  left: 910px;
+  bottom: 104px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.slider__toggle--active::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+  content: "";
 }
 
 .services__list {
@@ -691,6 +731,7 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
   color: #ffffff;
   outline: none;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -870,6 +911,7 @@ input[type="radio"].visually-hidden {
 .filters__label {
   position: relative;
   margin-left: 36px;
+  cursor: pointer;
 }
 
 .filters__label::before {

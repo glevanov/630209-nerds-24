@@ -44,6 +44,8 @@
   position: relative;
 
   margin-left: 36px;
+
+  cursor: pointer;
 }
 
 .filters__label::before {
