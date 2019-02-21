@@ -3,8 +3,8 @@
 // Переключение модального окна
 (function () {
   var contactsButton = document.querySelector('.contacts__button');
-  var modal = document.querySelector('.feedback')
-  var modalClose = modal.querySelector('.feedback__close')
+  var modal = document.querySelector('.feedback');
+  var modalClose = modal.querySelector('.feedback__close');
 
   contactsButton.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -22,7 +22,7 @@
   var slides = document.querySelectorAll('.slider__item');
   var resetActiveToggle = function () {
     document.querySelector('.slider__toggle--active')
-      .classList.remove('slider__toggle--active')
+      .classList.remove('slider__toggle--active');
   };
   var setActiveToggle = function (target) {
     target.classList.add('slider__toggle--active');
@@ -58,3 +58,10 @@
   sliderControls.addEventListener('click', onToggleClick);
 })();
 
+// Переключение карты
+(function () {
+  var fallback = document.querySelector('.contacts__map');
+  var map = document.querySelector('.contacts__ya-map');
+  fallback.classList.add('visually-hidden');
+  map.classList.remove('visually-hidden');
+})();
