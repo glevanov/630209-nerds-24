@@ -936,6 +936,7 @@ input[type="radio"].visually-hidden {
   height: 578px;
   margin-top: 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .cards__card::before {
