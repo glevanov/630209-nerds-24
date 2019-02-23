@@ -28,7 +28,7 @@
   z-index: 0;
 }
 
-.contacts__ya-map {
+.contacts__iframe {
   position: absolute;
   top: 0;
   left: 0;
