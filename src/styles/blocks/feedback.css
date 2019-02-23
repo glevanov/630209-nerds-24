@@ -74,6 +74,11 @@
   opacity: 1;
 }
 
+.feedback__input:focus::placeholder,
+.feedback__textarea:focus::placeholder {
+  opacity: 1;
+}
+
 .feedback__input:invalid,
 .feedback__textarea:invalid {
   color: #e74246;

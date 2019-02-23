@@ -686,6 +686,21 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.feedback__input:focus:-ms-input-placeholder,
+.feedback__textarea:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.feedback__input:focus::-ms-input-placeholder,
+.feedback__textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.feedback__input:focus::placeholder,
+.feedback__textarea:focus::placeholder {
+  opacity: 1;
+}
+
 .feedback__input:invalid,
 .feedback__textarea:invalid {
   color: #e74246;
