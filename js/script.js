@@ -5,14 +5,27 @@
   var contactsButton = document.querySelector('.contacts__button');
   var modal = document.querySelector('.feedback');
   var modalClose = modal.querySelector('.feedback__close');
+  var firstInput = modal.querySelector('.feedback__input');
+
+  var closeModal = function () {
+    modal.classList.add('visually-hidden');
+    document.removeEventListener('keydown', onKeyDown);
+  }
+  var onKeyDown = function (evt) {
+    if (evt.key === 'Escape') {
+      closeModal();
+    }
+  };
 
   contactsButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     modal.classList.remove('visually-hidden');
+    document.addEventListener('keydown', onKeyDown);
+    firstInput.focus();
   });
   modalClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.add('visually-hidden');
+    closeModal();
   });
 })();
 

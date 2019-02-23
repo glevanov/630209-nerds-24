@@ -61,9 +61,6 @@
   text-transform: uppercase;
 }
 
-.range__label--min {
-}
-
 .range__input {
   width: 60px;
   padding: 8px 10px;
