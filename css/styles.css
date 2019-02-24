@@ -25,6 +25,38 @@
   url("../fonts/robotobold.woff") format("woff");
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  70% {
+    transform: translateX(-50%) translateY(-52%);
+  }
+
+  90% {
+    transform: translateX(-50%) translateY(-48%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-49%) translateY(-50%);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(-51%) translateY(-50%);
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -622,7 +654,7 @@ input[type="radio"].visually-hidden {
   left: 50%;
   top: 50%;
   z-index: 500;
-  display: block;
+  display: none;
   width: 960px;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -746,6 +778,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+}
+
+.feedback__show {
+  display: block;
+  animation: bounce 0.4s;
+}
+
+.feedback__error {
+  animation: shake 0.5s;
 }
 
 .button {

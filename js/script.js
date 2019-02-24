@@ -5,10 +5,13 @@
   var contactsButton = document.querySelector('.contacts__button');
   var modal = document.querySelector('.feedback');
   var modalClose = modal.querySelector('.feedback__close');
-  var firstInput = modal.querySelector('.feedback__input');
+  var name = modal.querySelector('input[type="text"]');
+  var email = modal.querySelector('input[type="email"]');
+  var textArea = modal.querySelector('.feedback__textarea')
 
   var closeModal = function () {
-    modal.classList.add('visually-hidden');
+    modal.classList.remove('feedback__show');
+    modal.classList.remove("feedback__error");
     document.removeEventListener('keydown', onKeyDown);
   }
   var onKeyDown = function (evt) {
@@ -19,14 +22,21 @@
 
   contactsButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.remove('visually-hidden');
+    modal.classList.add('feedback__show');
     document.addEventListener('keydown', onKeyDown);
-    firstInput.focus();
+    name.focus();
   });
   modalClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     closeModal();
   });
+  modal.addEventListener('submit', function (evt) {
+    if (!name.value || !email.value || !textArea.value) {
+      evt.preventDefault();
+      modal.classList.remove("feedback__error");
+      modal.classList.add("feedback__error");
+    }
+  })
 })();
 
 // Переключение слайдов

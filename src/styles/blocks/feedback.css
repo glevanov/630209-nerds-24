@@ -4,7 +4,7 @@
   top: 50%;
   z-index: 500;
 
-  display: block;
+  display: none;
   width: 960px;
 
   background-color: #ffffff;
@@ -126,4 +126,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+}
+
+.feedback__show {
+  display: block;
+
+  animation: bounce 0.4s;
+}
+
+.feedback__error {
+  animation: shake 0.5s;
 }
