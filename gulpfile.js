@@ -8,11 +8,12 @@ const rename = require('gulp-rename')
 const twig = require('gulp-twig')
 
 gulp.task('styles', function () {
-  return gulp
-    .src('src/styles/index.css')
+  return gulp.src('src/styles/index.css')
     .pipe(plumber())
-    .pipe(autoprefixer())
     .pipe(concatCss('styles.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions']
+    }))
     .pipe(gulp.dest('css'))
     .pipe(csso())
     .pipe(rename('styles.min.css'))
