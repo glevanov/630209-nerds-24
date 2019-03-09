@@ -1,7 +1,10 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  width: 258px;
+  margin-left: -205px;
 
   list-style: none;
 }
@@ -10,7 +13,7 @@
   margin-right: 12px;
 }
 
-.social__item:last-of-type {
+.social__item:nth-of-type(3n) {
   margin-right: 0;
 }
 

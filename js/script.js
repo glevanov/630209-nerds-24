@@ -78,5 +78,7 @@
     }
   };
 
-  sliderControls.addEventListener('click', onToggleClick);
+  if (sliderControls) {
+    sliderControls.addEventListener('click', onToggleClick);
+  }
 })();

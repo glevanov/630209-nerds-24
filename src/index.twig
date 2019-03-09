@@ -2,65 +2,61 @@
 
 {% block page %}
 <header class="main-header page__main-header">
-  <div class="wrapper">
-    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-    <nav class="main-navigation header__main-navigation">
-      <a class="main-navigation__logo">
-        <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
-      </a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="about.html">Студия</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="clients.html">Клиенты</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Магазин</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="contacts.html">Контакты</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--cart">
-          <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+  <nav class="main-navigation header__main-navigation wrapper">
+    <a class="main-navigation__logo">
+      <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+    </a>
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="about.html">Студия</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="clients.html">Клиенты</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="catalog.html">Магазин</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--cart">
+        <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="main page__main">
   <section class="slider main__slider">
-    <div class="wrapper">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="slider__list">
-        <li class="slider__item slider__item--slide-1">
-          <p class="slider__tagline">Долго, дорого,<br> скрупулезно.</p>
-          <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-        <li class="slider__item slider__item--slide-2 visually-hidden">
-          <p class="slider__tagline">Любим математику как никто другой</p>
-          <p class="slider__description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-        <li class="slider__item  slider__item--slide-3 visually-hidden">
-          <p class="slider__tagline">Только ночь,<br> только хардкор</p>
-          <p class="slider__description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-      </ul>
-      <ul class="slider__controls">
-        <li class="slider__controls-item">
-          <button class="slider__toggle slider__toggle--active" type="button" id="slider1"></button>
-        </li>
-        <li class="slider__controls-item">
-          <button class="slider__toggle" type="button" id="slider2"></button>
-        </li>
-        <li class="slider__controls-item">
-          <button class="slider__toggle" type="button" id="slider3"></button>
-        </li>
-      </ul>
-    </div>
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <ul class="slider__list wrapper">
+      <li class="slider__item slider__item--slide-1">
+        <p class="slider__tagline">Долго, дорого,<br> скрупулезно.</p>
+        <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+        <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+      <li class="slider__item slider__item--slide-2 visually-hidden">
+        <p class="slider__tagline">Любим математику как никто другой</p>
+        <p class="slider__description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+      <li class="slider__item  slider__item--slide-3 visually-hidden">
+        <p class="slider__tagline">Только ночь,<br> только хардкор</p>
+        <p class="slider__description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+        <a class="slider__button button" href="services.html">УЗНАТЬ БОЛЬШЕ</a>
+      </li>
+    </ul>
+    <ul class="slider__controls">
+      <li class="slider__controls-item">
+        <button class="slider__toggle slider__toggle--active" type="button" id="slider1"></button>
+      </li>
+      <li class="slider__controls-item">
+        <button class="slider__toggle" type="button" id="slider2"></button>
+      </li>
+      <li class="slider__controls-item">
+        <button class="slider__toggle" type="button" id="slider3"></button>
+      </li>
+    </ul>
   </section>
   <section class="services main__services wrapper separator">
     <h2 class="visually-hidden">Услуги</h2>

@@ -1,9 +1,11 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -39,6 +41,10 @@
 }
 
 .pagination__item--current .pagination__link {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 44px;
+
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }

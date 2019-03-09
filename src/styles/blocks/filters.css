@@ -33,7 +33,7 @@
 
 .filters__option {
   margin-top: 17px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .filters__option:last-of-type {
@@ -61,7 +61,8 @@
   content: "";
 }
 
-.filters__label:hover::before {
+.filters__label:hover::before,
+.filters__input:focus + .filters__label::before{
   opacity: 1;
 }
 

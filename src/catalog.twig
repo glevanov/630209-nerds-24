@@ -2,46 +2,45 @@
 
 {% block page %}
 <header class="main-header page__main-header">
-  <div class="wrapper">
-    <nav class="main-navigation">
-      <a class="logo main-navigation__logo" href="index.html">
-        <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
-      </a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="about.html">Студия</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="clients.html">Клиенты</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__link--inactive main-navigation__link--current">Магазин</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="contacts.html">Контакты</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--cart">
-          <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="main-navigation wrapper">
+    <a class="logo main-navigation__logo" href="index.html">
+      <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+    </a>
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="about.html">Студия</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="clients.html">Клиенты</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link main-navigation__link--inactive main-navigation__link--current">Магазин</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--cart">
+        <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="main page__main">
   <h1 class="main__heading">Магазин готовых шаблонов</h1>
   <section class="catalog main__catalog wrapper">
+    <h2 class="visually-hidden">Каталог</h2>
     <aside class="filters catalog__filters">
       <form>
         <fieldset class="range filters__fieldset filters__fieldset--range">
           <legend class="filters__heading">Стоимость:</legend>
-          <div class="range__controls">
-            <div class="range__scale">
-              <div class="range__bar"></div>
-            </div>
-            <div class="range__toggle range__toggle--min"></div>
-            <div class="range__toggle range__toggle--max"></div>
-          </div>
-          <div class="range__price-controls">
+          <p class="range__controls">
+            <span class="range__scale">
+              <span class="range__bar"></span>
+            </span>
+            <button class="range__toggle range__toggle--min" type="button"></button>
+            <button class="range__toggle range__toggle--max" type="button"></button>
+          </p>
+          <p class="range__price-controls">
             <label class="range__label range__label--min">
               от
               <input class="range__input" name="min-price" type="text" value="0">
@@ -50,7 +49,7 @@
               до
               <input class="range__input" name="max-price" type="text" value="15 000">
             </label>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--grid">
           <legend class="filters__heading">Сетка:</legend>
@@ -95,7 +94,7 @@
     </aside>
     <div class="catalog__main-column">
       <header class="sort catalog__header">
-        <h2 class="visually-hidden">Каталог шаблонов</h2>
+        <h3 class="visually-hidden">Каталог шаблонов</h3>
         <p class="sort__lead">СОРТИРОВАТЬ:</p>
         <ul class="sort__list">
           <li class="sort__item">
@@ -118,73 +117,73 @@
       <ul class="cards catalog__cards">
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-sedona.jpg" alt="Седона">
+            <img class="cards__preview" src="img/preview-sedona.jpg" width="360" height="576" alt="Седона">
             <div class="cards__description">
               <a class="cards__link" href="sedona.html">
-                <h3 class="cards__heading">Sedona</h3>
+                <h4 class="cards__heading">Sedona</h4>
               </a>
               <p class="cards__text cards__text--narrow">Информационный сайт для туристов</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-pink.jpg" alt="Пинк">
+            <img class="cards__preview" src="img/preview-pink.jpg" width="360" height="576" alt="Пинк">
             <div class="cards__description">
               <a class="cards__link" href="pink.html">
-                <h3 class="cards__heading">Pink App</h3>
+                <h4 class="cards__heading">Pink App</h4>
               </a>
               <p class="cards__text">Продуктовый лендинг приложения для iOS и Android</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-barbershop.jpg" alt="Барбершоп">
+            <img class="cards__preview" src="img/preview-barbershop.jpg" width="360" height="576" alt="Барбершоп">
             <div class="cards__description">
               <a class="cards__link" href="barbershop.html">
-                <h3 class="cards__heading">Barbershop</h3>
+                <h4 class="cards__heading">Barbershop</h4>
               </a>
               <p class="cards__text cards__text--narrow">Сайт салона красоты. Для мужчин, да.</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-mishka.jpg" alt="Мишка">
+            <img class="cards__preview" src="img/preview-mishka.jpg" width="360" height="576" alt="Мишка">
             <div class="cards__description">
               <a class="cards__link" href="mishka.html">
-                <h3 class="cards__heading">MISHKA</h3>
+                <h4 class="cards__heading">MISHKA</h4>
               </a>
               <p class="cards__text">Интернет-магазин вязаных игрушек</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-aplus.jpg" alt="А Плюс">
+            <img class="cards__preview" src="img/preview-aplus.jpg" width="360" height="576" alt="А Плюс">
             <div class="cards__description">
               <a class="cards__link" href="aplus.html">
-                <h3 class="cards__heading">A Plus</h3>
+                <h4 class="cards__heading">A Plus</h4>
               </a>
               <p class="cards__text">Лендинг курсов повышения квалификации</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>
         <li class="cards__item">
           <article class="cards__card">
-            <img class="cards__preview" src="img/preview-kvast.jpg" alt="Кваст">
+            <img class="cards__preview" src="img/preview-kvast.jpg" width="360" height="576" alt="Кваст">
             <div class="cards__description">
               <a class="cards__link" href="kvast.html">
-                <h3 class="cards__heading">Кваст</h3>
+                <h4 class="cards__heading">Кваст</h4>
               </a>
               <p class="cards__text">Промо-сайт производителя крафтового кваса</p>
-              <p class="cards__button button">9 900 руб.</p>
+              <button class="cards__button button">9 900 руб.</button>
             </div>
           </article>
         </li>

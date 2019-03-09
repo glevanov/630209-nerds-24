@@ -5,7 +5,8 @@
 }
 
 .slider__list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 
   list-style: none;
@@ -58,8 +59,8 @@
 
 .slider__controls {
   position: absolute;
-  left: 910px;
-  bottom: 104px;
+  left: 50%;
+  bottom: 95px;
   z-index: 100;
 
   display: flex;
@@ -70,6 +71,8 @@
   padding: 0;
 
   list-style: none;
+
+  transform: translateX(-44px);
 }
 
 .slider__toggle {

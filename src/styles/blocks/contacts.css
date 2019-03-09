@@ -1,47 +1,39 @@
 .contacts {
   position: relative;
-}
-
-.contacts::before {
-  position: absolute;
-  right: 390px;
-  top: 90px;
-
-  display: block;
-  height: 190px;
-  width: 231px;
-
-  background-image: url("../../img/map-marker.png");
-  background-repeat: no-repeat;
-
-  content: "";
-}
-
-.contacts__map {
-  position: relative;
 
   min-height: 416px;
+  overflow-y: auto;
 }
 
 .contacts__placeholder {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 0;
   z-index: 0;
+
+  display: block;
+  transform: translateX(-50%);
 }
 
 .contacts__iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 50;
 
-  width: 100%;
+  display: block;
   height: 100%;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 0;
 }
 
 .contacts__address {
   position: absolute;
-  left: 140px;
-  top: 210px;
+  left: 50%;
+  top: 57px;
   z-index: 100;
 
   display: flex;
@@ -50,12 +42,13 @@
   padding-right: 50px;
   width: calc(320px - 50px * 2);
   min-height: 308px;
+  overflow-y: auto;
 
   font-style: normal;
 
-  transform: translateY(-50%);
-
   background-color: #ffffff;
+
+  transform: translateX(-580px);
 }
 
 .contacts__recipient {
@@ -91,4 +84,5 @@
 
 .contacts__button {
   width: 220px;
+  margin-bottom: 20px;
 }

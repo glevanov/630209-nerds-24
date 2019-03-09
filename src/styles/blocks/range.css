@@ -1,9 +1,10 @@
 .range__controls {
-  margin-top: 49px;
-
   position: relative;
 
+  display: block;
+  margin: 0;
   height: 41px;
+  margin-top: 49px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
@@ -15,9 +16,18 @@
 }
 
 .range__scale {
+  display: block;
   height: 2px;
 
   background: #d7dcde;
+}
+
+.range__bar {
+  display: block;
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
 }
 
 .range__toggle {
@@ -28,19 +38,13 @@
   width: 4px;
   height: 4px;
   padding: 0;
+  box-sizing: content-box;
 
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.range__bar {
-  width: 70%;
-  height: 2px;
-
-  background: #00ca74;
 }
 
 .range__toggle--min {
@@ -54,6 +58,7 @@
 .range__price-controls {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .range__label {

@@ -1,6 +1,7 @@
 .sort {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sort__lead {
@@ -62,9 +63,11 @@
 }
 
 .sort__type:hover,
+.sort__type:focus,
 .sort__type:active,
 .sort__type--active,
 .sort__order:hover,
+.sort__order:focus,
 .sort__order:active,
 .sort__order--active {
   opacity: 1;

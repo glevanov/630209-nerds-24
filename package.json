@@ -6,13 +6,6 @@
   "author": "Grigoriy Levanov <glevanov@gmail.com>",
   "license": "MIT",
   "private": false,
-  "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 2 Safari versions",
-    "last 2 Edge versions",
-    "IE 11"
-  ],
   "scripts": {
     "test": "stylelint \"src/styles/**/*.css\"",
     "build": "gulp build",

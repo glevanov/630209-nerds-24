@@ -11,8 +11,8 @@ gulp.task('styles', function () {
   return gulp
     .src('src/styles/index.css')
     .pipe(plumber())
-    .pipe(concatCss('styles.css'))
     .pipe(autoprefixer())
+    .pipe(concatCss('styles.css'))
     .pipe(gulp.dest('css'))
     .pipe(csso())
     .pipe(rename('styles.min.css'))

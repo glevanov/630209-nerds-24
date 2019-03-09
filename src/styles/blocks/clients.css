@@ -1,6 +1,7 @@
 .clients__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -28,6 +29,7 @@
   top: 65px;
   right: 0;
 
+  display: block;
   width: 2px;
   height: 52px;
 
@@ -45,7 +47,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 180px;
+  height: 180px;
 
   opacity: 0.2;
 }

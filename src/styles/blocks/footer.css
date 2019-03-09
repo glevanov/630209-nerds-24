@@ -1,9 +1,15 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 70px;
 }
 
 .footer__contacts {
+  width: 100%;
   margin-top: 80px;
+  margin-bottom: 70px;
 }
 
 .footer__slogan {

@@ -5,6 +5,7 @@
 
 .main-navigation__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: 200px;
   margin-top: 10px;
