@@ -9,3 +9,8 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+.stylelintrc
+gulpfile.js
+yarn.lock
+package.json
