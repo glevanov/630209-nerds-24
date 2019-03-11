@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+</head>
+<body class="page">
+<header class="main-header page__main-header">
+  <nav class="main-navigation wrapper">
+    <a class="logo main-navigation__logo" href="index.html">
+      <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Нёрдс">
+    </a>
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="about.html">Студия</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="clients.html">Клиенты</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link main-navigation__link--inactive main-navigation__link--current">Магазин</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--cart">
+        <a class="main-navigation__link main-navigation__link--cart" href="cart.html">Корзина</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main page__main">
+  <h1 class="main__heading">Магазин готовых шаблонов</h1>
+  <section class="catalog main__catalog wrapper">
+    <h2 class="visually-hidden">Каталог</h2>
+    <aside class="filters catalog__filters">
+      <form>
+        <fieldset class="range filters__fieldset filters__fieldset--range">
+          <legend class="filters__heading">Стоимость:</legend>
+          <p class="range__controls">
+            <span class="range__scale">
+              <span class="range__bar"></span>
+            </span>
+            <button class="range__toggle range__toggle--min" type="button"></button>
+            <button class="range__toggle range__toggle--max" type="button"></button>
+          </p>
+          <p class="range__price-controls">
+            <label class="range__label range__label--min">
+              от
+              <input class="range__input" name="min-price" type="text" value="0">
+            </label>
+            <label class="range__label range__label--max">
+              до
+              <input class="range__input" name="max-price" type="text" value="15 000">
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="filters__fieldset filters__fieldset--grid">
+          <legend class="filters__heading">Сетка:</legend>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="radio" id="adaptive" name="grid" checked>
+            <label class="filters__label filters__label--radio" for="adaptive">Адаптивная</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="radio" id="fixed" name="grid">
+            <label class="filters__label filters__label--radio" for="fixed">Фиксированная</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="radio" id="stretch" name="grid">
+            <label class="filters__label filters__label--radio" for="stretch">Резиновая</label>
+          </p>
+        </fieldset>
+        <fieldset class="filters__fieldset filters__fieldset--features">
+          <legend class="filters__heading">ОСОБЕННОСТИ:</legend>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="checkbox" id="slider" name="features" checked>
+            <label class="filters__label filters__label--checkbox" for="slider">Слайдер</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="checkbox" id="strengths" name="features">
+            <label class="filters__label filters__label--checkbox" for="strengths">Блок преимуществ</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="checkbox" id="news" name="features" checked>
+            <label class="filters__label filters__label--checkbox" for="news">Новости</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="checkbox" id="gallery" name="features">
+            <label class="filters__label filters__label--checkbox" for="gallery">Галерея</label>
+          </p>
+          <p class="filters__option">
+            <input class="filters__input visually-hidden" type="checkbox" id="basket" name="features">
+            <label class="filters__label filters__label--checkbox" for="basket">Корзина</label>
+          </p>
+        </fieldset>
+        <button class="filters__button button button--accent">ПОКАЗАТЬ</button>
+      </form>
+    </aside>
+    <div class="catalog__main-column">
+      <header class="sort catalog__header">
+        <h3 class="visually-hidden">Каталог шаблонов</h3>
+        <p class="sort__lead">СОРТИРОВАТЬ:</p>
+        <ul class="sort__list">
+          <li class="sort__item">
+            <a class="sort__type sort__type--active" href="?sort-by=price">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__type" href="?sort-by=type">По типу</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__type" href="?sort-by=name">По названию</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__order sort__order--descending sort__order--active" href="?sort-order=desc" aria-label="Сортировать по убыванию"></a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__order sort__order--ascending" href="?sort-order=asc" aria-label="Сортировать по возрастанию"></a>
+          </li>
+        </ul>
+      </header>
+      <ul class="cards catalog__cards">
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-sedona.jpg" width="360" height="576" alt="Седона">
+            <div class="cards__description">
+              <a class="cards__link" href="sedona.html">
+                <h4 class="cards__heading">Sedona</h4>
+              </a>
+              <p class="cards__text cards__text--narrow">Информационный сайт для туристов</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-pink.jpg" width="360" height="576" alt="Пинк">
+            <div class="cards__description">
+              <a class="cards__link" href="pink.html">
+                <h4 class="cards__heading">Pink App</h4>
+              </a>
+              <p class="cards__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-barbershop.jpg" width="360" height="576" alt="Барбершоп">
+            <div class="cards__description">
+              <a class="cards__link" href="barbershop.html">
+                <h4 class="cards__heading">Barbershop</h4>
+              </a>
+              <p class="cards__text cards__text--narrow">Сайт салона красоты. Для мужчин, да.</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-mishka.jpg" width="360" height="576" alt="Мишка">
+            <div class="cards__description">
+              <a class="cards__link" href="mishka.html">
+                <h4 class="cards__heading">MISHKA</h4>
+              </a>
+              <p class="cards__text">Интернет-магазин вязаных игрушек</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-aplus.jpg" width="360" height="576" alt="А Плюс">
+            <div class="cards__description">
+              <a class="cards__link" href="aplus.html">
+                <h4 class="cards__heading">A Plus</h4>
+              </a>
+              <p class="cards__text">Лендинг курсов повышения квалификации</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="cards__card">
+            <img class="cards__preview" src="img/preview-kvast.jpg" width="360" height="576" alt="Кваст">
+            <div class="cards__description">
+              <a class="cards__link" href="kvast.html">
+                <h4 class="cards__heading">Кваст</h4>
+              </a>
+              <p class="cards__text">Промо-сайт производителя крафтового кваса</p>
+              <button class="cards__button button">9 900 руб.</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <footer class="pagination catalog__pagination">
+        <a href="previous.html" class="pagination__button pagination__button--inactive button button--accent">предыдущая</a>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--current">
+            <a class="pagination__link button button--accent" href="1.html" aria-label="Переход на страницу 1">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link button button--accent" href="2.html" aria-label="Переход на страницу 2">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link button button--accent" href="3.html" aria-label="Переход на страницу 3">3</a>
+          </li>
+        </ul>
+        <a href="next.html" class="pagination__button button button--accent">следующая</a>
+      </footer>
+    </div>
+  </section>
+</main>
+<footer class="footer page__footer wrapper wrapper--full-width">
+  <section class="contacts footer__contacts">
+    <h2 class="visually-hidden">Контактные данные</h2>
+    <address class="contacts__address">
+      <p class="contacts__recipient">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="contacts__button button" href="writeus.html">Напишите нам</a>
+    </address>
+    <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="416" allowfullscreen></iframe>
+    <img class="contacts__placeholder" src="img/map-placeholder.jpg" alt="Схема проезда" width="1440" height="416">
+  </section>
+  <ul class="social">
+    <li class="social__item">
+      <a class="social__link" href="https://vk.com/">
+        <img class="social__icon" src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15">
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="http://facebook.com/">
+        <img class="social__icon" src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="https://www.instagram.com/">
+        <img class="social__icon" src="img/icon-insta.svg" alt="Инстаграм" height="21" width="21">
+      </a>
+    </li>
+  </ul>
+  <p class="footer__slogan">
+      <span class="footer__tagline">Давайте дружить, это выгодно!</span>
+      Скидка 10% для друзей из социальных сетей.
+    </p>
+</footer>
+<form class="feedback page__feedback">
+  <p class="feedback__lead feedback__wrap">Напишите нам</p>
+  <div class="feedback__wrap feedback__wrap--input">
+    <label class="feedback__label">
+      Ваше имя:
+      <input class="feedback__input" type="text" placeholder="Имя Фамилия">
+    </label>
+    <label class="feedback__label">
+      Ваш e-mail:
+      <input class="feedback__input" type="email" placeholder="email@example.com">
+    </label>
+  </div>
+
+  <label class="feedback__label feedback__wrap">
+    Текст письма:
+    <textarea class="feedback__textarea" placeholder="В свободной форме" rows="4"></textarea>
+  </label>
+  <button class="feedback__submit button">ОТПРАВИТЬ</button>
+  <button class="feedback__close" type="button" aria-label="Закрыть форму"></button>
+</form>
+<script src="js/script.min.js"></script>
+</body>
+</html>
